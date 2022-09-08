@@ -6,7 +6,7 @@ import { BsFillTriangleFill } from "react-icons/bs";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center sm:items-start p-10 h-screen relative md:p-40">
+    <div className="flex flex-col items-center sm:items-start p-10 h-screen relative md:p-40 overflow-hidden">
       <div className="">
         <div className="flex flex-col items-start">
           <span className="opacity-50 md:text-xl">Hello!</span>
