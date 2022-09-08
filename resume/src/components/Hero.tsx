@@ -6,7 +6,7 @@ import { BsFillTriangleFill } from "react-icons/bs";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center md:items-start p-10 h-screen relative md:p-40">
+    <div className="flex flex-col items-center sm:items-start p-10 h-screen relative md:p-40">
       <div className="">
         <div className="flex flex-col items-start">
           <span className="opacity-50 md:text-xl">Hello!</span>
@@ -21,8 +21,8 @@ export default function Hero() {
           Hi, my name is Ryan and my passion is turning ideas into reality using
           the power of the internet.
         </p>
-        <div className="flex flex-col items-end md:items-start w-full py-10 sm:p-0">
-          <div className="flex flex-col items-center md:flex-row">
+        <div className="flex flex-col items-end sm:items-start w-full py-10 sm:p-0">
+          <div className="flex flex-col items-center sm:flex-row">
             <Link href="/contact">
               <button className="primary">Contact Me</button>
             </Link>
@@ -42,7 +42,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-0 left-0 h-full w-full -z-10">
-        <div className="w-full h-full absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/3 -z-10 opacity-50 md:translate-x-1/4 md:translate-y-1/4 rotate-12">
+        <div className="w-full h-full absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/3 -z-10 opacity-50 sm:translate-x-1/4 sm:translate-y-1/4 rotate-12">
           <Image
             src={BlobImage}
             alt="hero-image"
@@ -50,7 +50,7 @@ export default function Hero() {
             objectFit="contain"
           />
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-full -translate-x-1/4 translate-y-1/4 -z-10 md:translate-x-1/3 md:translate-y-0">
+        <div className="absolute bottom-0 left-0 w-full h-full -translate-x-1/4 translate-y-1/4 -z-10 sm:translate-x-1/3 sm:translate-y-0">
           <Image
             src={HeroImage}
             alt="hero-image"
