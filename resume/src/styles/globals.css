@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
+@layer base {
+  :root {
+    --bg-primary: 215, 92, 52;
+  }
+}
+
 body {
-  @apply bg-white dark:bg-gray-900 text-black dark:text-white;
+  @apply bg-white text-black;
+}
+
+.title {
+  @apply text-3xl font-bold p-1;
+}
+
+button {
+  @apply px-4 py-2 rounded shadow-md;
+}
+
+button.primary {
+  @apply text-white font-bold bg-primary;
 }
