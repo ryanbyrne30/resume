@@ -1,4 +1,4 @@
-import HeroImage from "@/assets/images/hero.webp";
+import HeroImage from "@/assets/images/hero.png";
 import BlobImage from "@/assets/svgs/blob.webp";
 import Image from "next/image";
 import Link from "next/link";
@@ -52,13 +52,13 @@ export default function Hero() {
             objectFit="contain"
           />
         </div>
-        <div className="h-10 w-32 bg-primary rounded-full opacity-50 absolute left-1/2 origin-top-left top-1/3 -z-10 translate-x-1/2 rotate-3 hidden sm:flex" />
-        <div className="h-16 w-16 bg-primary rounded-full opacity-30 absolute left-2/3 origin-top-left top-2/3 -z-10 translate-x-1/2 rotate-3 hidden sm:flex" />
+        <div className="h-10 w-32 bg-primary rounded-full opacity-10 absolute left-1/2 origin-top-left top-1/3 -z-10 translate-x-1/2 rotate-3 hidden sm:flex" />
+        <div className="h-16 w-16 bg-primary rounded-full opacity-10 absolute left-2/3 origin-top-left top-2/3 -z-10 translate-x-1/2 rotate-3 hidden sm:flex" />
         <div className="h-10 w-10 bg-primary rounded-full opacity-10 absolute left-3/4 origin-top-left top-1/4 -z-10 translate-x-3/4 -translate-y-full rotate-3 hidden sm:flex" />
-        <div className="h-44 w-44 bg-primary rounded-full opacity-30 absolute left-1/2 origin-top-left top-3/4 -z-10 translate-x-1/4 translate-y-1/2 rotate-3 hidden sm:flex" />
+        <div className="h-44 w-44 bg-primary rounded-full opacity-10 absolute left-1/2 origin-top-left top-3/4 -z-10 translate-x-1/4 translate-y-1/2 rotate-3 hidden sm:flex" />
         <div className="h-8 w-8 bg-white rounded-full opacity-20 absolute left-1/2 origin-top-left top-1/3 -z-10 translate-x-0 rotate-3 hidden sm:flex" />
         <div className="h-32 w-full bg-white rounded-full opacity-20 absolute left-0 origin-top-left top-1/2 -z-10 translate-x-1/2 -rotate-12 sm:flex" />
-        <div className="absolute bottom-0 left-0 w-full h-full -translate-x-1/4 translate-y-1/4 -z-10 sm:translate-x-1/3 sm:translate-y-0">
+        <div className="absolute bottom-0 left-0 right-0 w-full h-1/2 sm:h-3/4 -translate-x-1/4 -z-10 sm:translate-x-1/3 sm:translate-y-0">
           <Image
             src={HeroImage}
             alt="hero-image"

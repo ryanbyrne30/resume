@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Hero />
-      <div className="bg-black h-screen text-white">hello</div>
+      <div className="bg-primary h-screen text-white">hello</div>
     </div>
   );
 };
