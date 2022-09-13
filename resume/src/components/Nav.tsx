@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { BiMenu } from "react-icons/bi";
+import ContactButton from "./ContactButton";
 
 function PrimaryMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +31,7 @@ function PrimaryMenu() {
             <Link href="/portfolio">Portfolio</Link>
           </li>
           <li className="p-4" onClick={() => setIsOpen(false)}>
-            <Link href="/contact">
-              <button className="primary">Contact</button>
-            </Link>
+            <ContactButton />
           </li>
         </ul>
       </div>

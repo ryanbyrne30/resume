@@ -1,8 +1,9 @@
-import HeroImage from "@/assets/images/hero.png";
+import HeroImage from "@/assets/images/hero.webp";
 import BlobImage from "@/assets/svgs/blob.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { BsFillTriangleFill } from "react-icons/bs";
+import ContactButton from "./ContactButton";
 
 export default function Hero() {
   return (
@@ -25,9 +26,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col items-end sm:items-start w-full py-10 sm:p-0">
           <div className="flex flex-col items-center sm:flex-row">
-            <Link href="/contact">
-              <button className="primary">Contact Me</button>
-            </Link>
+            <ContactButton />
             <Link href="/about">
               <div className=" cursor-pointer flex flex-row items-center whitespace-nowrap p-4">
                 <span className="p-1 rounded-full border-2 border-gray-300">
