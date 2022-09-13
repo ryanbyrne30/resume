@@ -16,12 +16,12 @@ export default function Hero() {
             I&apos;m Ryan Byrne
           </span>
           <span className="text-xl md:text-3xl">
-            Full Stack Engineer & Computerphile
+            Full Stack Engineer & Computer Enthusiast
           </span>
         </div>
         <p className="my-10 w-full max-w-sm hidden sm:flex font-light md:py-10">
-          Hi, my name is Ryan and my passion is turning ideas into reality using
-          the power of the internet.
+          Hi, my name is Ryan and I turn ideas into reality using the power of
+          the internet.
         </p>
         <div className="flex flex-col items-end sm:items-start w-full py-10 sm:p-0">
           <div className="flex flex-col items-center sm:flex-row">
