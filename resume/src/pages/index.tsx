@@ -6,6 +6,8 @@ const Home: NextPage = () => {
   return (
     <div>
       <Hero />
+      <div id="about"></div>
+
       <div
         id="contact"
         className="text-white w-full column center p-2 sm:p-8 bg-primary"
