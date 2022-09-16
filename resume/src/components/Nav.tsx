@@ -25,7 +25,7 @@ function PrimaryMenu() {
             <Link href="/">Home</Link>
           </li>
           <li className="p-4" onClick={() => setIsOpen(false)}>
-            <Link href="/about">About</Link>
+            <Link href="/#experience">Experience</Link>
           </li>
           <li className="p-4" onClick={() => setIsOpen(false)}>
             <Link href="/portfolio">Portfolio</Link>

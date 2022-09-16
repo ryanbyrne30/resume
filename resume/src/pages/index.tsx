@@ -1,5 +1,5 @@
-import About from "@/components/About";
 import ContactForm from "@/components/ContactForm";
+import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import type { NextPage } from "next";
 
@@ -10,14 +10,17 @@ const Home: NextPage = () => {
       <div id="about"></div>
 
       <div
-        id="about"
-        className="w-full column center sm:p-8 bg-primary text-white relative p-2"
+        id="experience"
+        className="w-full column center bg-primary text-white relative p-2"
       >
         <span
-          className="origin-top-left absolute h-full bg-red-500 -top-1/4 -rotate-3 -z-10 bg-inherit"
-          style={{ width: "150%", left: "-25%" }}
+          className="absolute top-0 left-0 w-full -translate-y-full"
+          style={{
+            borderRight: "100vw solid rgb(var(--bg-primary))",
+            borderTop: "8vw solid transparent",
+          }}
         />
-        <About />
+        <Experience />
       </div>
       <div
         id="contact"

@@ -64,3 +64,7 @@ button.primary {
 .card {
   @apply rounded shadow-md p-4 bg-white text-black max-w-sm transition-all;
 }
+
+.tag {
+  @apply text-xs p-0 px-2 opacity-50 shadow-sm bg-white w-fit text-black rounded-full m-0.5;
+}
