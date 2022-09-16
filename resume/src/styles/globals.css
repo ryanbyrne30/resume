@@ -60,3 +60,7 @@ button.primary {
     transform: translateY(5) rotate(-3deg);
   }
 }
+
+.card {
+  @apply rounded shadow-md p-4 bg-white text-black max-w-sm transition-all;
+}
