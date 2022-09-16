@@ -6,7 +6,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <Hero />
-      <div className="text-white w-full column center p-2 sm:p-8 bg-primary">
+      <div
+        id="contact"
+        className="text-white w-full column center p-2 sm:p-8 bg-primary"
+      >
         <div className="w-full max-w-xl bg-white text-black p-4 rounded-xl">
           <ContactForm />
         </div>

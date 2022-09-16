@@ -17,7 +17,7 @@ export default function Hero() {
             I&apos;m Ryan Byrne
           </span>
           <span className="text-xl md:text-3xl">
-            Full Stack Engineer & Computer Enthusiast
+            Full Stack Engineer & Technology Enthusiast
           </span>
         </div>
         <p className="my-10 w-full max-w-sm hidden sm:flex font-light md:py-10">
