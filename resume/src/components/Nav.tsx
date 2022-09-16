@@ -19,18 +19,24 @@ function PrimaryMenu() {
       >
         <ul
           className="flex flex-col items-center justify-center h-full w-full
-        sm:flex-row bg-white"
+        sm:flex-row bg-white text-left"
         >
-          <li className="p-4" onClick={() => setIsOpen(false)}>
+          <li className="p-2" onClick={() => setIsOpen(false)}>
             <Link href="/">Home</Link>
           </li>
-          <li className="p-4" onClick={() => setIsOpen(false)}>
-            <Link href="/#experience">Experience</Link>
+          <li className="p-2" onClick={() => setIsOpen(false)}>
+            <Link href="/#about">About Me</Link>
           </li>
-          <li className="p-4" onClick={() => setIsOpen(false)}>
-            <Link href="/portfolio">Portfolio</Link>
+          <li className="p-2" onClick={() => setIsOpen(false)}>
+            <Link href="/#skills">Skills</Link>
           </li>
-          <li className="p-4" onClick={() => setIsOpen(false)}>
+          <li className="p-2" onClick={() => setIsOpen(false)}>
+            <Link href="/#employment">Employment</Link>
+          </li>
+          <li className="p-2" onClick={() => setIsOpen(false)}>
+            <Link href="/#portfolio">Portfolio</Link>
+          </li>
+          <li className="p-2" onClick={() => setIsOpen(false)}>
             <ContactButton />
           </li>
         </ul>

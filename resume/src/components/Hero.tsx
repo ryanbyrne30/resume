@@ -17,7 +17,7 @@ export default function Hero() {
             I&apos;m Ryan Byrne
           </span>
           <span className="text-xl md:text-3xl">
-            Full Stack Engineer & Technology Enthusiast
+            Full Stack Developer & Technology Enthusiast
           </span>
         </div>
         <p className="my-10 w-full max-w-sm hidden sm:flex font-light md:py-10">
@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="flex flex-col items-end sm:items-start w-full py-10 sm:p-0">
           <div className="flex flex-col items-center sm:flex-row">
             <ContactButton />
-            <Link href="/about">
+            <Link href="/#portfolio">
               <div className=" cursor-pointer flex flex-row items-center whitespace-nowrap p-4">
                 <span className="p-1 rounded-full border-2 border-gray-300">
                   <BsFillTriangleFill

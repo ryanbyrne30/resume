@@ -19,9 +19,13 @@ label {
   @apply w-full text-left text-sm font-bold opacity-80;
 }
 
+label.date {
+  @apply bg-primary text-white py-1 px-2 w-fit my-2;
+}
+
 input,
 textarea {
-  @apply border-2 p-1 rounded text-black w-full;
+  @apply border-2 border-gray-300 p-1 rounded text-black w-full;
 }
 
 .title {
@@ -67,4 +71,8 @@ button.primary {
 
 .tag {
   @apply text-xs p-0 px-2 opacity-50 shadow-sm bg-white w-fit text-black rounded-full m-0.5;
+}
+
+.sectionTitle {
+  @apply text-4xl font-bold opacity-50 my-2 text-left;
 }
