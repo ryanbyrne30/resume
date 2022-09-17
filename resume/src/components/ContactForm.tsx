@@ -31,9 +31,7 @@ export default function ContactForm() {
   return (
     <form className="w-full column center" onSubmit={handleSubmit(onSubmit)}>
       <FormError error={contactMutation.error} />
-      <h2 className="text-2xl font-bold text-center">
-        I&apos;d love to hear from you!
-      </h2>
+      <h2 className="text-2xl font-bold text-center">Let&apos;s Talk!</h2>
       <div className="group">
         <label>From</label>
         <input

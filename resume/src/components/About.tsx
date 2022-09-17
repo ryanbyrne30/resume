@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRef } from "react";
 
 export default function About() {
   return (

@@ -1,12 +1,44 @@
 import HeroImage from "@/assets/images/hero.webp";
 import BlobImage from "@/assets/svgs/blob.webp";
 import Image from "next/image";
-import Link from "next/link";
 import { BsFillTriangleFill } from "react-icons/bs";
 import ContactButton from "./ContactButton";
 import { Link as ScrollLink } from "react-scroll";
+import { randChoice, randInt, randNorm, randPct } from "@/utils/data";
+
+function Decor({ size }: { size: number }) {
+  const color = randChoice([
+    "bg-primary",
+    "bg-primary",
+    "bg-primary",
+    "bg-white",
+  ]);
+  const direction = randChoice(["reverse", ""]);
+  const height = randNorm() * 50 * size;
+  const width = height * randInt(1, 2);
+  const rotation = randPct() * 180;
+  const delay = randInt(0, 10);
+  const duration = randInt(8, 30);
+
+  return (
+    <div
+      className={`${color} rounded-full absolute -z-10 opacity-0 decor`}
+      style={{
+        height,
+        width,
+        top: `${randInt(-5, 100)}%`,
+        left: `${randInt(-5, 100)}%`,
+        animationDelay: `${delay}s`,
+        animationDuration: `${duration}s`,
+        animationDirection: direction,
+      }}
+    />
+  );
+}
 
 export default function Hero() {
+  const decorSizes = new Array(0).fill(2);
+
   return (
     <div className="flex flex-col items-center sm:items-start p-10 h-screen relative md:p-40 overflow-hidden">
       <div className="">
@@ -44,20 +76,19 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-0 left-0 h-full w-full -z-10">
-        <div className="w-full h-full absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/3 -z-10 opacity-50 sm:translate-x-1/4 sm:translate-y-1/4 rotate-12">
+        {/* <div className="w-full h-full absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/3 -z-10 opacity-50 sm:translate-x-1/4 sm:translate-y-1/4 rotate-12">
           <Image
             src={BlobImage}
             alt="hero-image"
             layout="fill"
             objectFit="contain"
           />
-        </div>
-        <div className="h-10 w-32 bg-primary rounded-full opacity-10 absolute left-1/2 origin-top-left top-1/3 -z-10 translate-x-1/2 rotate-3 hidden sm:flex" />
-        <div className="h-16 w-16 bg-primary rounded-full opacity-10 absolute left-2/3 origin-top-left top-2/3 -z-10 translate-x-1/2 rotate-3 hidden sm:flex" />
-        <div className="h-10 w-10 bg-primary rounded-full opacity-10 absolute left-3/4 origin-top-left top-1/4 -z-10 translate-x-3/4 -translate-y-full rotate-3 hidden sm:flex" />
-        <div className="h-44 w-44 bg-primary rounded-full opacity-10 absolute left-1/2 origin-top-left top-3/4 -z-10 translate-x-1/4 translate-y-1/2 rotate-3 hidden sm:flex" />
-        <div className="h-8 w-8 bg-white rounded-full opacity-20 absolute left-1/2 origin-top-left top-1/3 -z-10 translate-x-0 rotate-3 hidden sm:flex" />
-        <div className="h-32 w-full bg-white rounded-full opacity-20 absolute left-0 origin-top-left top-1/2 -z-10 translate-x-1/2 -rotate-12 sm:flex" />
+        </div> */}
+
+        {decorSizes.map((s, idx) => (
+          <Decor key={idx} size={s} />
+        ))}
+
         <div className="absolute bottom-0 left-0 right-0 w-full h-1/2 sm:h-3/4 -translate-x-1/4 -z-10 sm:translate-x-1/3 sm:translate-y-0">
           <Image
             src={HeroImage}
