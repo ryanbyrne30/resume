@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsFillTriangleFill } from "react-icons/bs";
 import ContactButton from "./ContactButton";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Hero() {
   return (
@@ -27,7 +28,7 @@ export default function Hero() {
         <div className="flex flex-col items-end sm:items-start w-full py-10 sm:p-0">
           <div className="flex flex-col items-center sm:flex-row">
             <ContactButton />
-            <Link href="/#about">
+            <ScrollLink to="about" smooth>
               <div className=" cursor-pointer flex flex-row items-center whitespace-nowrap p-4">
                 <span className="p-1 rounded-full border-2 border-gray-300">
                   <BsFillTriangleFill
@@ -37,7 +38,7 @@ export default function Hero() {
                 </span>
                 <span className="pl-2">Start Tour</span>
               </div>
-            </Link>
+            </ScrollLink>
           </div>
         </div>
       </div>
