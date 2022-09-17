@@ -37,10 +37,8 @@ function Decor({ size }: { size: number }) {
 }
 
 export default function Hero() {
-  const decorSizes = new Array(0).fill(2);
-
   return (
-    <div className="flex flex-col items-center sm:items-start p-10 h-screen relative md:p-40 overflow-hidden">
+    <div className="flex flex-col items-center sm:items-start p-10 h-full relative md:p-40 overflow-hidden">
       <div className="">
         <div className="flex flex-col items-start">
           <span className="opacity-50 md:text-xl font-light italic">
@@ -75,21 +73,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 h-full w-full -z-10">
-        {/* <div className="w-full h-full absolute bottom-0 left-0 -translate-x-1/4 translate-y-1/3 -z-10 opacity-50 sm:translate-x-1/4 sm:translate-y-1/4 rotate-12">
-          <Image
-            src={BlobImage}
-            alt="hero-image"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div> */}
-
-        {decorSizes.map((s, idx) => (
-          <Decor key={idx} size={s} />
-        ))}
-
-        <div className="absolute bottom-0 left-0 right-0 w-full h-1/2 sm:h-3/4 -translate-x-1/4 -z-10 sm:translate-x-1/3 sm:translate-y-0">
+      <div className="absolute bottom-0 left-0 right-0 w-full h-1/2 sm:h-3/4 -translate-x-1/4 -z-10 sm:translate-x-1/4 sm:translate-y-1/3">
+        <div className="relative w-full h-full">
           <Image
             src={HeroImage}
             alt="hero-image"
