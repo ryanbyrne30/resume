@@ -70,9 +70,17 @@ button.primary {
 }
 
 .tag {
-  @apply text-xs p-0 px-2 opacity-50 shadow-sm bg-white w-fit text-black rounded-full m-0.5;
+  @apply text-xs p-0 px-2 shadow-sm bg-primary opacity-70 w-fit text-white rounded-full m-0.5;
 }
 
 .sectionTitle {
   @apply text-4xl font-bold opacity-50 my-2 text-left;
+}
+
+section {
+  @apply w-full column center p-10;
+}
+
+.freeze {
+  @apply fixed;
 }

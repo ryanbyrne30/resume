@@ -1,17 +1,24 @@
-import Painting from "@/assets/images/Painting.webp";
-import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
     <div>
       <h1 className="sectionTitle">About Me</h1>
-      <p>
-        My current title is cyber architect, but I am a problem solver and an
-        artist at heart.
+      <p className="text-xl py-4">
+        I&apos;m a full stack developer from Chandler, Arizona. I hold a
+        bachelor&apos;s of science in computer science from{" "}
+        <Link href="https://www.stevens.edu/" target="_blank">
+          <span className="underline cursor-pointer">
+            Stevens Institute of Technology
+          </span>
+        </Link>
+        .
       </p>
-      <div className="w-full h-32 relative">
-        <Image src={Painting} alt="painting" layout="fill" objectFit="cover" />
-      </div>
+      <p className="font-thin">
+        Worked with project teams to create secure and user friendly
+        applications. Met and presented products to leadership and clients to
+        ensure expected quality and requirements have been met.
+      </p>
     </div>
   );
 }

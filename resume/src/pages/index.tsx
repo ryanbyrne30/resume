@@ -10,38 +10,56 @@ const Home: NextPage = () => {
   return (
     <div className="overflow-x-hidden">
       <Hero />
-
-      <div
+      <section
         id="about"
-        className="relative p-2 column center w-full bg-transparent text-white mb-8"
+        className="relative column center w-full bg-primary text-white mb-20"
+        style={{ marginBottom: "10vw" }}
       >
         <span
-          className="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 origin-center -rotate-2 bg-primary -z-10"
-          style={{ height: "150%", width: "150%" }}
+          className="w-screen h-0 absolute top-0 left-0 -translate-y-full"
+          style={{
+            borderTop: "5vw solid transparent",
+            borderRight: "100vw solid rgb(var(--bg-primary))",
+          }}
         />
-        <About />
-      </div>
-
-      <div id="about">
-        <Skills />
-      </div>
-
-      <div id="employment" className="w-full column center relative p-2">
-        <Employment />
-      </div>
-
-      <div id="portfolio">
-        <Portfolio />
-      </div>
-
-      <div
-        id="contact"
-        className="text-white w-full column center p-2 sm:p-8 bg-primary"
-      >
-        <div className="w-full max-w-xl bg-white text-black p-4 rounded-xl">
-          <ContactForm />
+        <div className="max-w-lg">
+          <About />
         </div>
-      </div>
+        <span
+          className="w-screen h-0 absolute bottom-0 left-0 translate-y-full"
+          style={{
+            borderBottom: "5vw solid transparent",
+            borderRight: "100vw solid rgb(var(--bg-primary))",
+          }}
+        />
+      </section>
+
+      <section id="skills" className="p-10 w-screen column center">
+        <div className="w-full max-w-lg">
+          <Skills />
+        </div>
+      </section>
+
+      <section id="employment">
+        <div className="w-full max-w-lg">
+          <Employment />
+        </div>
+      </section>
+
+      <section id="contact" className="bg-primary relative mt-20 py-20">
+        <span
+          className="w-screen h-0 absolute top-0 left-0 -translate-y-full"
+          style={{
+            borderTop: "5vw solid transparent",
+            borderRight: "100vw solid rgb(var(--bg-primary))",
+          }}
+        />
+        <div className="w-full max-w-lg">
+          <div className="rounded-xl bg-white w-full p-3">
+            <ContactForm />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

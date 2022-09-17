@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="flex flex-col items-end sm:items-start w-full py-10 sm:p-0">
           <div className="flex flex-col items-center sm:flex-row">
             <ContactButton />
-            <Link href="/#portfolio">
+            <Link href="/#about">
               <div className=" cursor-pointer flex flex-row items-center whitespace-nowrap p-4">
                 <span className="p-1 rounded-full border-2 border-gray-300">
                   <BsFillTriangleFill

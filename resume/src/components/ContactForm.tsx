@@ -25,10 +25,15 @@ export default function ContactForm() {
     window.location.reload();
   }
 
+  if (contactMutation.isLoading)
+    return <div className="w-full h-full">loading</div>;
+
   return (
     <form className="w-full column center" onSubmit={handleSubmit(onSubmit)}>
       <FormError error={contactMutation.error} />
-      <h2 className="text-xl font-bold p-2">Contact Form</h2>
+      <h2 className="text-2xl font-bold text-center">
+        I&apos;d love to hear from you!
+      </h2>
       <div className="group">
         <label>From</label>
         <input

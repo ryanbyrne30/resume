@@ -25,9 +25,6 @@ export default function Portfolio() {
             <li className="tag">TypeScript</li>
             <li className="tag">tRPC</li>
             <li className="tag">GitHub</li>
-            <li className="tag"></li>
-            <li className="tag"></li>
-            <li className="tag"></li>
           </ul>
         </li>
         <li className="column group">
@@ -58,8 +55,6 @@ export default function Portfolio() {
             <li className="tag">tRPC</li>
             <li className="tag">Twilio</li>
             <li className="tag">GitHub</li>
-            <li className="tag"></li>
-            <li className="tag"></li>
           </ul>
         </li>
       </ul>
