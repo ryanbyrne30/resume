@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div>
-      <h1 className="sectionTitle">About Me</h1>
+    <div className="column items-center sm:items-end">
+      <h1 className="sectionTitle w-full text-start">About Me</h1>
       <p className="text-xl py-4">
         I&apos;m a full stack developer from Chandler, Arizona. I hold a
         bachelor&apos;s of science in computer science from{" "}
@@ -19,6 +19,9 @@ export default function About() {
         applications. Met and presented products to leadership and clients to
         ensure expected quality and requirements have been met.
       </p>
+      <Link href="/assets/Ryan_Byrne_Resume.pdf" download={true}>
+        <button className="bg-white text-black font-bold my-8">Resume</button>
+      </Link>
     </div>
   );
 }
