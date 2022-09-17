@@ -20,13 +20,20 @@ export default function ContactForm() {
 
   const { register, handleSubmit } = useForm();
 
-  if (contactMutation.isSuccess) {
-    alert("Thank you for your message!");
-    window.location.reload();
-  }
+  if (contactMutation.isSuccess)
+    return (
+      <div className="w-full h-full text-xl font-bold text-center column center">
+        <span className="font-thin text-sm">Your message has been sent.</span>
+        <span className="font-bold">Thank you for reaching out!</span>
+      </div>
+    );
 
   if (contactMutation.isLoading)
-    return <div className="w-full h-full">loading</div>;
+    return (
+      <div className="w-full h-full text-xl font-bold animate-pulse text-center">
+        Sending email...
+      </div>
+    );
 
   return (
     <form className="w-full column center" onSubmit={handleSubmit(onSubmit)}>
