@@ -19,7 +19,7 @@ export default function About() {
         applications. Met and presented products to leadership and clients to
         ensure expected quality and requirements have been met.
       </p>
-      <Link href="/assets/Ryan_Byrne_Resume.pdf" download={true}>
+      <Link href="/assets/Ryan_Byrne_Resume_2023.pdf" download={true}>
         <button className="bg-white text-black font-bold my-8">Resume</button>
       </Link>
     </div>
