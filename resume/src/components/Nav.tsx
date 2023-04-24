@@ -48,7 +48,7 @@ function PrimaryMenu() {
               to="employment"
               onClick={() => setIsOpen(false)}
             >
-              Employment
+              Work
             </Link>
           </li>
           <li className="p-2 cursor-pointer">

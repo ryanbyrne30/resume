@@ -1,6 +1,5 @@
 import observerAppear from "@/utils/observer";
-import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 function Job({
   date,
@@ -20,9 +19,9 @@ function Job({
       <label className="date">{date}</label>
       <h3 className="text-xl font-bold">{role}</h3>
       {href !== undefined ? (
-        <Link href={href}>
+        <a href={href} target="_blank">
           <label className="cursor-pointer underline">{company}</label>
-        </Link>
+        </a>
       ) : (
         <label>{company}</label>
       )}
@@ -38,23 +37,24 @@ export default function Employment() {
 
   return (
     <div className="w-full relative">
-      <h1 className="sectionTitle">Employment</h1>
+      <h1 className="sectionTitle">Work</h1>
       <ul>
         <Job
-          date="March 2023 - Current"
-          role="Software Engineer"
-          company="Sports Business Ventures"
-          description="Creating a scalable and maintainable web scraping engine and email notification system for career opportunities in the sports industry."
+          date="January 2023 - Current"
+          role="Full Stack Engineer"
+          company="Swift Events"
+          description="Brought event registration platform for small organizations from concept to production (beta) serverless application"
+          href="https://www.swiftevents.app"
         />
-        <Job
-          date="January 2023 - March 2023"
+        {/* <Job
+          date="December 2023 - February 2023"
           role="Full Stack Engineer"
           company="Empower On LLC"
           description="Designed and built a full stack serverless web application to allow teams to pay and register for Empower On events."
           href="https://empoweron.app"
-        />
+        /> */}
         <Job
-          date="June 2021 - November 2022"
+          date="June 2021 - October 2022"
           role="Cyber Architect II"
           company="Northrop Grumman"
           description="Architecting, developing and deploying custom, scalable
