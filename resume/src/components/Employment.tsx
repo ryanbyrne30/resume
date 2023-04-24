@@ -19,7 +19,7 @@ function Job({
       <label className="date">{date}</label>
       <h3 className="text-xl font-bold">{role}</h3>
       {href !== undefined ? (
-        <a href={href} target="_blank">
+        <a href={href} target="_blank" rel="noreferrer">
           <label className="cursor-pointer underline">{company}</label>
         </a>
       ) : (
