@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
+    <div id="hero" className="overflow-x-hidden pt-12">
       <Hero />
       <section
         id="about"

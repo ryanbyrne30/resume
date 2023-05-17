@@ -24,6 +24,14 @@ export default function Skills() {
       <h1 className="sectionTitle">Skills</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2">
         <SkillBlock
+          title="Intangible"
+          skills={[
+            "Work horse and innovator",
+            "Observant and can connect the dots at different levels and scopes",
+            "Great communicator, better listener",
+          ]}
+        />
+        <SkillBlock
           title="Design & Create"
           skills={[
             "Figma",

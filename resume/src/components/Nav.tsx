@@ -4,69 +4,68 @@ import { BiMenu } from "react-icons/bi";
 import ContactButton from "./ContactButton";
 import { Link, animateScroll as scroll } from "react-scroll";
 
-function PrimaryMenu() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    if (isOpen) document.body.classList.add("freeze");
-    else document.body.classList.remove("freeze");
-  }, [isOpen]);
-
+function MenuItems({ closeMenu }: { closeMenu: () => void }) {
   return (
-    <div className="bg-gray-50">
-      <BiMenu
-        className="text-2xl sm:hidden bg-white cursor-pointer"
-        onClick={() => setIsOpen(!isOpen)}
-      />
-      <div
-        className={`absolute top-full right-0 w-screen transition-all overflow-hidden sm:relative sm:h-fit sm:w-fit z-10 ${
-          isOpen ? "h-screen" : "h-0"
-        }`}
-      >
-        <ul
-          className="flex flex-col items-center justify-center h-full w-full
-        sm:flex-row bg-white text-left"
-        >
-          <li className="p-2 cursor-pointer">
-            <Link smooth={true} to="/" onClick={() => setIsOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li className="p-2 cursor-pointer">
-            <Link smooth={true} to="about" onClick={() => setIsOpen(false)}>
-              About Me
-            </Link>
-          </li>
-          <li className="p-2 cursor-pointer">
-            <Link smooth={true} to="skills" onClick={() => setIsOpen(false)}>
-              Skills
-            </Link>
-          </li>
-          <li className="p-2 cursor-pointer">
-            <Link
-              smooth={true}
-              to="employment"
-              onClick={() => setIsOpen(false)}
-            >
-              Work
-            </Link>
-          </li>
-          <li className="p-2 cursor-pointer">
-            <ContactButton onClick={() => setIsOpen(false)} />
-          </li>
-        </ul>
-      </div>
-    </div>
+    <ul
+      className="flex gap-4 flex-col items-center justify-center h-full w-full
+sm:flex-row bg-white text-left"
+    >
+      <li className="cursor-pointer">
+        <Link smooth={true} to="hero" onClick={closeMenu}>
+          Home
+        </Link>
+      </li>
+      <li className="cursor-pointer">
+        <Link smooth={true} to="about" onClick={closeMenu}>
+          About Me
+        </Link>
+      </li>
+      <li className="cursor-pointer">
+        <Link smooth={true} to="skills" onClick={closeMenu}>
+          Skills
+        </Link>
+      </li>
+      <li className="cursor-pointer">
+        <Link smooth={true} to="employment" onClick={closeMenu}>
+          Work
+        </Link>
+      </li>
+      <li className="cursor-pointer">
+        <ContactButton onClick={closeMenu} />
+      </li>
+    </ul>
   );
 }
 
 export default function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="relative flex flex-row items-center justify-between w-full px-4 py-2 md:px-8">
-      <Link smooth={true} to="/">
-        <span className="font-cursive text-2xl cursor-pointer">Ryan Byrne</span>
-      </Link>
-      <PrimaryMenu />
-    </div>
+    <>
+      <div className="bg-white fixed z-30 top-0 left-0 right-0 flex flex-row items-center justify-between w-full px-4 py-2 md:px-8">
+        <Link smooth={true} to="hero">
+          <span className="font-cursive text-2xl cursor-pointer">
+            Ryan Byrne
+          </span>
+        </Link>
+        <div className="sm:hidden">
+          <BiMenu
+            className="text-2xl sm:hidden bg-white cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          />
+        </div>
+
+        <div className="hidden sm:block">
+          <MenuItems closeMenu={() => setIsOpen(false)} />
+        </div>
+      </div>
+      <div
+        className={`${
+          isOpen ? "top-0" : "-top-full"
+        } bg-white z-10 transition-all w-screen h-screen fixed left-0 right-0`}
+      >
+        <MenuItems closeMenu={() => setIsOpen(false)} />
+      </div>
+    </>
   );
 }

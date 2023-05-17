@@ -40,40 +40,29 @@ export default function Employment() {
       <h1 className="sectionTitle">Work</h1>
       <ul>
         <Job
-          date="January 2023 - Current"
+          date="October 2023 - Current"
           role="Full Stack Engineer"
           company="Swift Events"
-          description="Brought event registration platform for small organizations from concept to production (beta) serverless application"
+          description="Took an unpolished concept for an event management application and brought it to production while minimizing development costs and maximizing profit margin"
           href="https://www.swiftevents.app"
         />
-        {/* <Job
-          date="December 2023 - February 2023"
-          role="Full Stack Engineer"
-          company="Empower On LLC"
-          description="Designed and built a full stack serverless web application to allow teams to pay and register for Empower On events."
-          href="https://empoweron.app"
-        /> */}
         <Job
           date="June 2021 - October 2022"
           role="Cyber Architect II"
           company="Northrop Grumman"
-          description="Architecting, developing and deploying custom, scalable
-            cybersecurity tools to maintain infrastructure and satisfy
-            requirements."
+          description="Revolutionized company operations by working with my team to architect and build a DOD-compliant software factory which will be foundational in future software development processes"
         />
         <Job
           date="June 2020 - June 2021"
           role="Full Stack Developer"
           company="Northrop Grumman"
-          description="Developed full stack .Net Core web application and worked with other
-            teams to integrate our product into their workflow."
+          description="Worked with my team to develop a solution for tracking career trajectories of internal employees to display patterns of career development within the organization"
         />
         <Job
           date="August 2020 - May 2021"
           role="Full Stack Developer"
           company="Fundfish"
-          description="Brought a concept for startup from design all the way to fully
-            functional MVP where it was presented to venture capitalists."
+          description="Collaborated with a small team to bring a startup idea from concept to MVP where it was presented to venture capitalists for future funding"
         />
       </ul>
     </div>

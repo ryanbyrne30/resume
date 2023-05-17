@@ -51,12 +51,11 @@ export default function Hero() {
             I&apos;m Ryan Byrne
           </span>
           <span className="text-xl md:text-3xl pb-10">
-            Full Stack Developer & Technology Enthusiast
+            Solutions Oriented Technology Enthusiast
           </span>
         </div>
-        <p className="pb-10 w-full max-w-sm hidden sm:flex font-light">
-          Hi, my name is Ryan and I turn ideas into reality using the power of
-          the internet.
+        <p className="pb-10 w-full max-w-sm sm:flex font-light">
+          Give me the impossible, I&apos;ll show you where you&apos;re wrong.
         </p>
         <div className="flex flex-col items-end sm:items-center sm:flex-row sm:pb-20">
           <ContactButton />
@@ -81,6 +80,8 @@ export default function Hero() {
             alt="hero-image"
             layout="fill"
             objectFit="contain"
+            priority
+            loading="eager"
           />
         </div>
       </div>
