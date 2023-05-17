@@ -51,7 +51,7 @@ export default function Hero() {
             I&apos;m Ryan Byrne
           </span>
           <span className="text-xl md:text-3xl pb-10">
-            Solutions Oriented Technology Enthusiast
+            Software Engineer & Technology Enthusiast
           </span>
         </div>
         <p className="pb-10 w-full max-w-sm sm:flex font-light">
