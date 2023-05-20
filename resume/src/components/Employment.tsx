@@ -48,7 +48,7 @@ export default function Employment() {
         />
         <Job
           date="June 2021 - October 2022"
-          role="Cyber Architect II"
+          role="Cyber Architect"
           company="Northrop Grumman"
           description="Revolutionized company operations by working with my team to architect and build a DOD-compliant software factory which will be foundational in future software development processes"
         />
