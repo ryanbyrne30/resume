@@ -14,9 +14,6 @@ export default function About() {
         risks is encouraged and tackling the impossible is an every day
         challenge; where progress is valued more than being right.
       </p>
-      <p className="text-xl w-full">
-        I will either be working with you or against you.
-      </p>
 
       <Link href="/assets/Ryan_Byrne_Resume.pdf" download={true}>
         <button className="bg-white text-black font-bold my-8">Resume</button>
