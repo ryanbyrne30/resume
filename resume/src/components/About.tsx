@@ -6,7 +6,7 @@ export default function About() {
       <h1 className="sectionTitle w-full text-start">About Me</h1>
       <p className="text-xl">
         As someone who has worked at every point in the software development
-        cycle, I can adapt to any environment and offer creative solutions from
+        cycle, I will adapt to any environment and offer creative solutions from
         a wide breadth of knowledge.
       </p>
       <p className="text-xl">
