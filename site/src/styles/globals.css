@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hide::-webkit-scrollbar,
+.scrollbar-hide::-webkit-scrollbar-track,
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  width: 0;
+  display: none;
+  overflow: hidden;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  @apply h-[100dvh] overflow-hidden font-medium;
+}
+
+header {
+  @apply flex flex-col gap-2;
+}
+
+h1 {
+  @apply text-4xl font-bold leading-9 tracking-tight;
+}
+
+h2 {
+  @apply text-3xl font-bold tracking-tight;
+}
+
+h3 {
+  @apply font-bold leading-5 tracking-tight;
+}
+
+.subtitle {
+  @apply font-bold italic text-primary-500;
+}
+
+.muted {
+  @apply font-light text-main-300;
+}
+
+.subtitle-divider {
+  @apply mx-2 text-main-500;
+}
+
+input,
+textarea {
+  @apply border-b-[1px] border-main-500 bg-transparent p-1;
+}
+
+textarea {
+  @apply border-[1px];
+}
+
+input:focus,
+textarea:focus {
+  @apply rounded-sm border-main-50 bg-main-700 outline-none;
+}
