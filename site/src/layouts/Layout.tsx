@@ -49,6 +49,15 @@ export function Layout({
           name="description"
           content="Ryan Byrne is software engineer who prides himself on developing impactful solutions to extraordinary problems."
         />
+        <meta property="og:title" content="Ryan Byrne's Resume" />
+        <meta
+          property="og:description"
+          content="Ryan Byrne is software engineer who prides himself on developing impactful solutions to extraordinary problems."
+        />
+        <meta
+          property="og:image"
+          content="https://www.ryanbyrne.work/images/headshot.webp"
+        />
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <main className="flex h-[100dvh] w-full flex-col items-center bg-main-900 sm:p-16">
@@ -57,8 +66,8 @@ export function Layout({
           <div className="w-full overflow-hidden sm:rounded-r-xl sm:py-8">
             <div
               className={twMerge(
-                "h-full overflow-hidden bg-main-800 text-white shadow-md shadow-main-950 transition-all duration-300 sm:rounded-r-xl",
-                isOpen ? "" : "-translate-x-full"
+                "h-full -translate-x-full overflow-hidden bg-main-800 text-white shadow-md shadow-main-950 transition-all duration-300 sm:rounded-r-xl",
+                isOpen ? "translate-x-0" : "-translate-x-full"
               )}
             >
               <Nav />
