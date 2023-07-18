@@ -33,9 +33,11 @@ export function Layout({
   children: ReactNode;
   title?: string;
 }) {
+  const [hasLoaded, setHasLoaded] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    setHasLoaded(true);
     setTimeout(() => {
       setIsOpen(true);
     }, 300);
@@ -66,8 +68,9 @@ export function Layout({
           <div className="w-full overflow-hidden sm:rounded-r-xl sm:py-8">
             <div
               className={twMerge(
-                "h-full -translate-x-full overflow-hidden bg-main-800 text-white shadow-md shadow-main-950 transition-all duration-300 sm:rounded-r-xl",
-                isOpen ? "translate-x-0" : "-translate-x-full"
+                "hidden h-full -translate-x-full overflow-hidden bg-main-800 text-white shadow-md shadow-main-950 transition-all duration-300 sm:rounded-r-xl",
+                isOpen ? "translate-x-0" : "-translate-x-full",
+                hasLoaded ? "block" : ""
               )}
             >
               <Nav />
