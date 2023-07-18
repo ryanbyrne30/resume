@@ -87,7 +87,7 @@ export function Layout({
 
 function Headshot() {
   return (
-    <div className="relative hidden h-full w-0 flex-col justify-end bg-gradient-to-b from-main-900 to-main-700 shadow-xl shadow-main-950 sm:flex sm:w-52 lg:w-96">
+    <div className="relative z-30 hidden h-full w-0 flex-col justify-end bg-gradient-to-b from-main-900 to-main-700 shadow-xl shadow-main-950 sm:flex sm:w-52 lg:w-96">
       <div className=" h-full w-full">
         <Image
           src="/images/headshot.webp"
