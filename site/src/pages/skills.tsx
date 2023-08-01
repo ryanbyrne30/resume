@@ -5,7 +5,7 @@ export default function SkillsPage() {
     <Layout>
       <div className="flex flex-col gap-8">
         <header>
-          <h1>Skills</h1>
+          <h1>skills</h1>
         </header>
         <article className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <section className="flex flex-col gap-2">

@@ -30,7 +30,7 @@ export default function ExperiencePage() {
               </header>
               <p>
                 Developed a SaaS event management platform as a response to
-                untapped demand in a niche organization market
+                untapped niche event organization market demand
               </p>
             </section>
             <section className="flex flex-col gap-4">
@@ -61,8 +61,8 @@ export default function ExperiencePage() {
               </header>
               <p>
                 Revolutionized company operations by working with my team to
-                design and build a DOD-compliant software factory to serve
-                multiple programs
+                design and build a DOD-compliant software factory to increase
+                development efficiencies
               </p>
             </section>
             <section className="flex flex-col gap-4">
