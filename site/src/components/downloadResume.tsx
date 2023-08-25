@@ -9,7 +9,7 @@ export function DownloadResume({
 }) {
   return (
     <a
-      href="/assets/Ryan_Byrne_Resume.pdf"
+      href="/assets/Ryan_Byrne_Full_Stack.pdf"
       download
       aria-label="Download resume"
       className={className}
