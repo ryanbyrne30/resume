@@ -53,8 +53,12 @@ textarea {
   @apply border-b-[1px] border-main-500 bg-transparent p-1;
 }
 
+input {
+  @apply rounded-none;
+}
+
 textarea {
-  @apply border-[1px];
+  @apply rounded border-[1px];
 }
 
 input:focus,
