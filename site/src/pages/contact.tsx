@@ -48,7 +48,7 @@ export default function ContactPage() {
     <Layout>
       <div className="flex flex-col items-center gap-16">
         <header className="w-full text-left">
-          <h1>send message</h1>
+          <h1>Send Message</h1>
         </header>
         <form
           // eslint-disable-next-line @typescript-eslint/no-misused-promises

@@ -7,3 +7,5 @@ export * from "./SuitcaseIcon";
 export * from "./PaintbrushIcon";
 export * from "./SpeechIcon";
 export * from "./LinkIcon";
+export * from "./GitHubIcon";
+export * from "./LinkedInIcon";

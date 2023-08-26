@@ -1,5 +1,7 @@
 import { DownloadResume } from "@/components/downloadResume";
 import {
+  GitHubIcon,
+  LinkedInIcon,
   PaintbrushIcon,
   ProfileIcon,
   SpeechIcon,
@@ -98,9 +100,30 @@ function Headshot() {
           alt="Heashot"
         />
       </div>
-      <div className="absolute bottom-0 left-0 right-0 flex h-40 flex-col justify-center bg-gradient-to-t from-main-950 to-transparent p-4 text-center">
-        <h1 className="text-3xl font-bold text-white">Ryan Byrne</h1>
-        <p className="text-primary-500">Full Stack Engineer</p>
+      <div className="absolute bottom-0 left-0 right-0 flex h-40 flex-col justify-center gap-4 bg-gradient-to-t from-main-950 to-transparent p-4 text-center">
+        <div>
+          <h1 className="text-3xl font-bold text-white">Ryan Byrne</h1>
+          <p className="text-primary-500">Full Stack Engineer</p>
+        </div>
+        <ul className="flex flex-row flex-wrap items-center justify-center gap-4">
+          <a
+            href="https://github.com/ryanbyrne30"
+            target="_blank"
+            className="flex w-fit flex-row items-center gap-1 fill-white stroke-white hover:fill-main-300 hover:stroke-main-300"
+          >
+            <GitHubIcon className="h-6 w-6" />
+          </a>
+          <a
+            href="https://github.com/ryanbyrne30"
+            target="_blank"
+            className="flex w-fit flex-row items-center gap-1 fill-white stroke-white hover:fill-main-300 hover:stroke-main-300"
+          >
+            <LinkedInIcon className="h-6 w-6" />
+          </a>
+          <DownloadResume>
+            <DownloadIcon className="h-8 w-8 rounded-full border border-transparent bg-primary-500 fill-primary-500 stroke-white p-1 transition-colors hover:border-primary-500 hover:bg-transparent hover:fill-transparent hover:stroke-primary-500 hover:text-primary-500" />
+          </DownloadResume>
+        </ul>
       </div>
     </div>
   );

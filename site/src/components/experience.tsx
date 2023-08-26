@@ -7,6 +7,7 @@ interface Props {
   subtitle: string;
   description: string;
   link?: string;
+  stack?: string[];
 }
 
 export function Experience({
@@ -15,6 +16,7 @@ export function Experience({
   subtitle,
   description,
   link,
+  stack,
 }: Props) {
   const [isFocus, setIsFocus] = useState(false);
 
@@ -43,6 +45,16 @@ export function Experience({
       >
         {description}
       </p>
+      <ul className="flex flex-row flex-wrap items-center gap-1.5">
+        {stack?.map((t) => (
+          <span
+            key={t}
+            className="rounded-full bg-main-700 px-1 text-xs text-main-200"
+          >
+            {t}
+          </span>
+        ))}
+      </ul>
     </section>
   );
 }
