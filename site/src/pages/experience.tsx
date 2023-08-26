@@ -1,3 +1,4 @@
+import { Experience } from "@/components/experience";
 import { Layout } from "@/layouts/Layout";
 
 export default function ExperiencePage() {
@@ -5,7 +6,7 @@ export default function ExperiencePage() {
     <Layout>
       <div className="flex flex-col gap-8">
         <header>
-          <h1>experience</h1>
+          <h1>Experience</h1>
           <p className="subtitle">
             B.S. Computer Science <span className="subtitle-divider">/</span>{" "}
             Minor Cybersecurity
@@ -17,100 +18,85 @@ export default function ExperiencePage() {
           self-starter who is always looking for more efficient and secure
           solutions.
         </p>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <article className="flex flex-col gap-8">
-            <h2>experience</h2>
-            <section className="flex flex-col gap-4">
-              <header>
-                <p className="font-bold text-primary-500">Oct 2022 - Current</p>
-                <a href="https://www.swiftevents.app" target="_blank">
-                  <h3>Swift Events</h3>
-                </a>
-                <p className="muted">Full Stack Engineer</p>
-              </header>
-              <p>
-                Developed a SaaS event management platform as a response to
-                untapped niche event organization market demand
-              </p>
-            </section>
-            <section className="flex flex-col gap-4">
-              <header>
-                <p className="font-bold text-primary-500">Jun 2022</p>
-                <a
-                  href="https://www.sportsbusinessventures.com/"
-                  target="_blank"
-                >
-                  <h3>Sports Business Ventures</h3>
-                </a>
-                <p className="muted">Software Engineer</p>
-              </header>
-              <p>
-                Created a web scraper to automate client&apos;s process of
-                collecting job postings and converting to a PDF
-              </p>
-            </section>
-            <section className="flex flex-col gap-4">
-              <header>
-                <p className="font-bold text-primary-500">
-                  Jun 2021 - Oct 2022
-                </p>
-                <a href="https://www.northropgrumman.com/" target="_blank">
-                  <h3>Northrop Grumman</h3>
-                </a>
-                <p className="muted">Cyber Architect</p>
-              </header>
-              <p>
-                Revolutionized company operations by working with my team to
-                design and build a DOD-compliant software factory to increase
-                development efficiencies
-              </p>
-            </section>
-            <section className="flex flex-col gap-4">
-              <header>
-                <p className="font-bold text-primary-500">
-                  Jun 2020 - Jun 2021
-                </p>
-                <a href="https://www.northropgrumman.com/" target="_blank">
-                  <h3>Northrop Grumman</h3>
-                </a>
-                <p className="muted">Full Stack Engineer</p>
-              </header>
-              <p>
-                Worked with my team to develop a full-stack .NET Core
-                application that tracked the career trajectories of internal
-                employees
-              </p>
-            </section>
+            <h2>Work</h2>
+            <Experience
+              date="Oct 2022 - Current"
+              title="Swift Events (contract)"
+              link="https://swiftevents.app"
+              subtitle="Full Stack Engineer"
+              description="Identified and responded to a niche market demand by developing a SaaS event management platform tailored for small to medium sized organizations resulting in over 60 successful event registrations within the first month after launch"
+            />
+            <Experience
+              date="Jun 2021 - Oct 2022"
+              title="Northrop Grumman"
+              link="https://www.northropgrumman.com/"
+              subtitle="Cyber Architect"
+              description="Revolutionized company operations by working with my team to design and build a DOD-compliant software factory to increase development efficiencies"
+            />
+            <Experience
+              date="Jun 2020 - Jun 2021"
+              title="Northrop Grumman"
+              link="https://www.northropgrumman.com/"
+              subtitle="Full Stack Engineer (contract)"
+              description="Spearheaded the development efforts in building an internal .Net Core application to track employee career paths and received the Bravo Award for Operational Efficiency"
+            />
 
-            <section className="flex flex-col gap-4">
-              <header>
-                <p className="font-bold text-primary-500">
-                  Aug 2020 - May 2021
-                </p>
-                <h3>FundFish</h3>
-                <p className="muted">Full Stack Engineer</p>
-              </header>
-              <p>
-                Brought client&apos;s startup idea (NDA) from ideation phase to
-                MVP where it was presented to VCs for funding
-              </p>
-            </section>
+            <Experience
+              date="Aug 2020 - May 2021"
+              title="Fundfish"
+              subtitle="Full Stack Engineer (contract)"
+              description="Worked with my team of 5 to bring a client's idea for a startup from ideation to full stack MERN MVP web application where it was presented to Venture Capitalists to obtain additional funding"
+            />
           </article>
           <article className="flex flex-col gap-8">
-            <h2>education</h2>
-            <section className="flex flex-col gap-4">
-              <header>
-                <p className="font-bold text-primary-500">2017 - 2021</p>
-                <a href="https://www.stevens.edu/" target="_blank">
-                  <h3>Stevens Institute of Technology</h3>
-                </a>
-                <p className="muted">Hoboken, NJ</p>
-              </header>
-              <p>
-                Bachelors of Science in Computer Science with a minor in
-                cybersecurity
-              </p>
-            </section>
+            <h2>Projects</h2>
+            <Experience
+              date="Sep 2022 - Current"
+              title="Website & Digital Marketing"
+              link="https://www.empoweron.app"
+              subtitle="Freelance, as-needed - Empower On"
+              description="Increased client's internet presence by developing a full stack website allowing for posting info about upcoming events and produce eye-catching marketing promotions for social media using Adobe Photoshop."
+            />
+            <Experience
+              date="Jun 2023"
+              title="Jobs In Sports Webscraper"
+              link="https://www.sportsbusinessventures.com"
+              subtitle="Freelance - Sports Business Ventures"
+              description="Consulted with client and developed a web scraper to collect job postings from target websites, convert listings to a PDF, and automatically email to client on a weekly basis."
+            />
+            <Experience
+              date="Jan 2023"
+              title="Curriculum Textbook Finder"
+              link="https://github.com/ryanbyrne30/textbook_finder"
+              subtitle="Personal"
+              description="A webscraper for gathering materials for college curriculums, based on major, in a cost effective way."
+            />
+            <Experience
+              date="July 2022"
+              title="Wurdee"
+              link="https://www.wurdee.com"
+              subtitle="Personal"
+              description="Built and integrated a website for displaying random thought provoking quotes and words with Twilio to allow users to interact with the website over SMS."
+            />
+            <Experience
+              date="February 2018"
+              title="Volleyball Scouting Tool"
+              link="https://github.com/ryanbyrne30/volleyball-scouting-reporter"
+              subtitle="For Stevens Insitute of Technology Men's Volleyball"
+              description="Analytics tracker built in Python to generate detailed and data driven, live scouting reports resulting in a massive competitive advantage and leading to the team finishing 2nd and 3rd in NCAA DIII Men's Volleyball."
+            />
+          </article>
+          <article className="flex flex-col gap-8">
+            <h2>Education</h2>
+            <Experience
+              date="May 2021"
+              title="Stevens Institute of Technology"
+              link="https://www.stevens.edu/"
+              subtitle="Hoboken, NJ"
+              description="Bachelors of Science in Computer Science with a minor in cybersecurity; Dean's List; Varsity Men's Volleyball"
+            />
           </article>
         </div>
       </div>

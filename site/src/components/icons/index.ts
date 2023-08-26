@@ -6,3 +6,4 @@ export * from "./ProfileIcon";
 export * from "./SuitcaseIcon";
 export * from "./PaintbrushIcon";
 export * from "./SpeechIcon";
+export * from "./LinkIcon";
