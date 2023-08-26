@@ -23,9 +23,9 @@ export default function ExperiencePage() {
             <h2>Work</h2>
             <Experience
               date="Oct 2022 - Current"
-              title="Swift Events (contract)"
+              title="Swift Events"
               link="https://swiftevents.app"
-              subtitle="Full Stack Engineer"
+              subtitle="Full Stack Engineer (contract)"
               description="Identified and responded to a niche market demand by developing a SaaS event management platform tailored for small to medium sized organizations resulting in over 60 successful event registrations within the first month after launch"
               stack={[
                 "ReactJS",
