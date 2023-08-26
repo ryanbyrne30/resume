@@ -39,7 +39,7 @@ export default function Home() {
           <PrimaryButton>Download Resume</PrimaryButton>
         </DownloadResume>
         <div className="sm:hidden">
-          <Socials />
+          <Socials hideDownload />
         </div>
       </div>
     </Layout>
