@@ -13,7 +13,7 @@ export function Socials({ hideDownload }: { hideDownload?: boolean }) {
         <GitHubIcon className="h-6 w-6" />
       </a>
       <a
-        href="https://github.com/ryanbyrne30"
+        href="https://www.linkedin.com/in/ryan-byrne-3878b5196/"
         target="_blank"
         className="flex w-fit flex-row items-center gap-1 fill-white stroke-white hover:fill-main-300 hover:stroke-main-300"
       >
