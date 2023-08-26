@@ -1,5 +1,6 @@
 import { PrimaryButton } from "@/components/buttons/PrimaryButton";
 import { DownloadResume } from "@/components/downloadResume";
+import { Socials } from "@/components/socials";
 import { Layout } from "@/layouts/Layout";
 
 export default function Home() {
@@ -19,9 +20,12 @@ export default function Home() {
           problems in fast paced environments. Received the Bravo Award for
           Operational Efficiency from Northrop Grumman.
         </p>
-        <DownloadResume>
+        <DownloadResume className="flex flex-col items-center sm:items-start">
           <PrimaryButton>Download Resume</PrimaryButton>
         </DownloadResume>
+        <div className="sm:hidden">
+          <Socials />
+        </div>
       </div>
     </Layout>
   );
