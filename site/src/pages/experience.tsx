@@ -147,7 +147,7 @@ export default function ExperiencePage() {
             <Experience
               date="July 2022"
               title="Wurdee"
-              link="https://www.wurdee.com"
+              link="https://github.com/ryanbyrne30/wurdee"
               subtitle="Personal"
               description="Built and integrated a website for displaying random thought provoking quotes and words with Twilio to allow users to interact with the website over SMS."
               stack={[
