@@ -22,10 +22,27 @@ export default function ExperiencePage() {
           <article className="flex flex-col gap-8">
             <h2>Work</h2>
             <Experience
-              date="Oct 2022 - Current"
+              date="Oct 2023 - Current"
+              title="Plexus Worldwide"
+              link="https://plexusworldwide.com"
+              subtitle="Tech Lead, Sr. Software Engineer"
+              description="Led a dynamic engineering team of 4 in the development of a second-generation critical system, enhancing global order fulfillment and tracking capabilities."
+              stack={[
+                "Leadership",
+                "Mentorship",
+                "Java Spring Boot",
+                "Apache Kafka",
+                "Mulesoft",
+                "NextJS",
+                "TypeScript",
+                "Docker",
+              ]}
+            />
+            <Experience
+              date="Oct 2022 - Oct 2023"
               title="Swift Events"
               link="https://swiftevents.app"
-              subtitle="Full Stack Engineer (contract)"
+              subtitle="Full Stack Engineer"
               description="Identified and responded to a niche market demand by developing a SaaS event management platform tailored for small to medium sized organizations resulting in over 60 successful event registrations within the first month after launch"
               stack={[
                 "ReactJS",
@@ -65,7 +82,7 @@ export default function ExperiencePage() {
               date="Jun 2020 - Jun 2021"
               title="Northrop Grumman"
               link="https://www.northropgrumman.com/"
-              subtitle="Full Stack Engineer (contract)"
+              subtitle="Full Stack Engineer"
               description="Spearheaded the development efforts in building an internal .Net Core application to track employee career paths and received the Bravo Award for Operational Efficiency"
               stack={[
                 ".Net Core",
@@ -84,7 +101,7 @@ export default function ExperiencePage() {
             <Experience
               date="Aug 2020 - May 2021"
               title="Fundfish"
-              subtitle="Full Stack Engineer (contract)"
+              subtitle="Full Stack Engineer"
               description="Brought client's idea for a startup from ideation to full stack MERN MVP web application where it was presented to Venture Capitalists to obtain additional funding."
               stack={[
                 "NodeJS",
@@ -101,10 +118,10 @@ export default function ExperiencePage() {
           </article>
           <article className="flex flex-col gap-8">
             <h2>Projects</h2>
-            <Experience
-              date="Sep 2022 - Current"
+            {/* <Experience
+              date="Sep 2022 - Mar 2023"
               title="Website & Digital Marketing"
-              link="https://www.empoweron.app"
+              link="https://www.empoweron.app/about"
               subtitle="Freelance, as-needed - Empower On"
               description="Increased client's internet presence by developing a full stack website allowing for posting info about upcoming events and produce eye-catching marketing promotions for social media using Adobe Photoshop."
               stack={[
@@ -119,7 +136,7 @@ export default function ExperiencePage() {
                 "Adobe Photoshop",
                 "Figma",
               ]}
-            />
+            /> */}
             <Experience
               date="Jun 2023"
               title="Jobs In Sports Webscraper"

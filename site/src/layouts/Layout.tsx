@@ -102,7 +102,7 @@ function Headshot() {
       <div className="absolute bottom-0 left-0 right-0 flex h-40 flex-col justify-center gap-4 bg-gradient-to-t from-main-950 to-transparent p-4 text-center">
         <div>
           <h1 className="text-3xl font-bold text-white">Ryan Byrne</h1>
-          <p className="text-primary-500">Full Stack Engineer</p>
+          <p className="text-primary-500">Tech Lead, Sr. Software Engineer</p>
         </div>
         <Socials />
       </div>

@@ -9,12 +9,13 @@ export default function SkillsPage() {
         </header>
         <article className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <section className="flex flex-col gap-2">
-            <h2>Intangible</h2>
+            <h2>Soft Skills</h2>
             <ul>
+              <li>Leads from the Front</li>
+              <li>Team oriented</li>
               <li>Work horse</li>
               <li>Innovator</li>
               <li>Observant</li>
-              <li>Creative</li>
               <li>Great communicator, better listener</li>
             </ul>
           </section>
@@ -33,6 +34,8 @@ export default function SkillsPage() {
           <section className="flex flex-col gap-2">
             <h2>Backend</h2>
             <ul>
+              <li>Java Spring Boot</li>
+              <li>Mulesoft</li>
               <li>NodeJS / Express</li>
               <li>NextJS</li>
               <li>SvelteKit</li>
@@ -51,13 +54,16 @@ export default function SkillsPage() {
               <li>Docker</li>
               <li>Kubernetes</li>
               <li>AWS</li>
+              <li>Apache Kafka</li>
               <li>CICD - GitHub, GitLab</li>
             </ul>
           </section>
           <section className="flex flex-col gap-2">
             <h2>Database</h2>
             <ul>
-              <li>SQL - PostgreSQL, MySQL, ...</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MSSQL</li>
               <li>MongoDB</li>
             </ul>
           </section>
