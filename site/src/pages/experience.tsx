@@ -34,6 +34,7 @@ export default function ExperiencePage() {
                 "Apache Kafka",
                 "Mulesoft",
                 "NextJS",
+                "ReactJS",
                 "TypeScript",
                 "Docker",
               ]}

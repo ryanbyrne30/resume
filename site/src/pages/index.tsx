@@ -35,10 +35,10 @@ export default function Home() {
           fast paced environments.
         </p>
         <p className="w-fit rounded bg-gradient-to-r from-purple-900 to-slate-900 p-2">
-          First place at Plexus Worldwide&apos;s Hackathon
+          🏆 First place at Plexus Worldwide&apos;s Hackathon
         </p>
         <p className="w-fit rounded bg-gradient-to-r from-yellow-900 to-slate-900 p-2">
-          Received the Bravo Award for Operational Efficiency from Northrop
+          🏅 Received the Bravo Award for Operational Efficiency from Northrop
           Grumman.
         </p>
         <DownloadResume className="flex flex-col items-center sm:items-start">
