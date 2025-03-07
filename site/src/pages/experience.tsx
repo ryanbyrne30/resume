@@ -139,15 +139,16 @@ export default function ExperiencePage() {
               ]}
             /> */}
             <Experience
-              date="Jun 2023"
-              title="Jobs In Sports Webscraper"
+              date="Jun 2023 - Current"
+              title="Webscraping - Sports Business Ventures"
               link="https://www.sportsbusinessventures.com"
-              subtitle="Freelance - Sports Business Ventures"
+              subtitle="Freelance Developer, Consulting"
               description="Consulted with client and developed a web scraper to collect job postings from target websites, convert listings to a PDF, and automatically email to client on a weekly basis."
               stack={[
+                ".NET",
+                "C#",
                 "Python",
                 "Selenium",
-                "Beautiful Soup",
                 "GitHub Workflow",
                 "Cronjob",
                 "Automation",
